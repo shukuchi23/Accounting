@@ -16,14 +16,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @UIScope
 @SpringComponent("employeeForm")
 public class EmployeeForm extends CreationForm<Employee> {
     private final TextField lastname = new TextField("Фамилия");
     private final TextField firstname = new TextField("Имя");
-    private final TextField patronymic = new TextField("Имя");
+    private final TextField patronymic = new TextField("Отчество");
 
     private final Select<String> departmentSelect = new Select<>();
     private final Select<Rank> rankSelect = new Select<>();
